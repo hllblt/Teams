@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #edf0f3;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#asideSection {
+  width: 20%;
+  -webkit-box-shadow: -8px -8px 12px #a3b1c6;
+          box-shadow: -8px -8px 12px #a3b1c6;
+  background-color: #d4f5f2;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#asideSection .teamSelectLabel {
+  margin: 30px 0 10px 0;
+  background-color: rgba(0, 0, 139, 0.226);
+  padding: 5px 0;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px 3px 10px 3px;
+  font-weight: bold;
+}
+
+#asideSection .teamSelect {
+  border: none;
+  background-color: #a0e0db;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset -8px -8px 12px #c4ebe7, inset 8px 8px 12px #c4ebe7;
+          box-shadow: inset -8px -8px 12px #c4ebe7, inset 8px 8px 12px #c4ebe7;
+}
+
+#leftSection,
+#rightSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+#leftDiv,
+#rightDiv {
+  width: 90%;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 20px 0;
+  overflow: auto;
+  -webkit-box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+          box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+}
+
+#leftDiv .players,
+#rightDiv .players {
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#leftDiv .players .playerImg,
+#rightDiv .players .playerImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#leftDiv .players .playerInfo,
+#rightDiv .players .playerInfo {
+  margin-left: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: auto;
+  display: inline-block;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#leftDiv .players .playerInfo .playerText,
+#rightDiv .players .playerInfo .playerText {
+  width: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  opacity: 0;
+  color: black;
+}
+
+#leftDiv .players:hover .playerImg,
+#rightDiv .players:hover .playerImg {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#leftDiv .players:hover .playerText,
+#rightDiv .players:hover .playerText {
+  width: 200px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+#leftDiv .first,
+#rightDiv .first {
+  margin: 20px 0 0 20px;
+}
+
+#leftDiv .last,
+#rightDiv .last {
+  margin: 0 0 20px 20px;
+}
+
+#leftDiv .center,
+#rightDiv .center {
+  margin: 0 0 0 20px;
+}
+/*# sourceMappingURL=style.css.map */

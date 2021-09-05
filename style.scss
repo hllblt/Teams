@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #edf0f3;
+}
+.main {
+  display: flex;
+  justify-content: flex-start;
+}
+#asideSection {
+  width: 20%;
+  box-shadow: -8px -8px 12px #a3b1c6;
+  background-color: rgb(212, 245, 242);
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .teamSelectLabel {
+    // display: block;
+    margin: 30px 0 10px 0;
+    background-color: rgba(0, 0, 139, 0.226);
+    padding: 5px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px 3px 10px 3px;
+    font-weight: bold;
+  }
+  .teamSelect {
+    // display: block;
+    border: none;
+    background-color: rgb(160, 224, 219);
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow:  inset -8px -8px 12px rgb(196, 235, 231),inset 8px 8px 12px rgb(196, 235, 231);
+  }
+  #leftTeam {
+    // margin-bottom: 50px;
+  }
+}
+#leftSection,
+#rightSection {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  // border: 1px solid black;
+  transition: 0.5s ease-out;
+}
+#leftDiv,
+#rightDiv {
+  width: 90%;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 20px 0;
+  overflow: auto;
+  box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+}
+#leftDiv,
+#rightDiv {
+  .players {
+    margin: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // border: 1px solid red;
+    .playerImg {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: 1s;
+    }
+    .playerInfo {
+      margin-left: 30px;
+      transition: 1s;
+      overflow: auto;
+      display: inline-block;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      .playerText {
+        width: 0px;
+        transition: 1s;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        white-space: nowrap;
+        border-right: 2px solid black;
+        opacity: 0;
+        color: black;
+      }
+    }
+  }
+  .players:hover .playerImg {
+    transform: scale(1.5);
+    transition: 1s;
+  }
+  .players:hover .playerText {
+    width: 200px;
+    transition: 1s;
+    opacity: 1;
+  }
+  .first {
+    margin: 20px 0 0 20px;
+  }
+  .last {
+    margin: 0 0 20px 20px;
+  }
+  .center {
+    margin: 0 0 0 20px;
+  }
+}
