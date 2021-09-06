@@ -74,10 +74,17 @@ body {
   width: 90%;
   border-radius: 20px;
   max-width: 500px;
-  margin: 20px 0;
+  margin: 10px 0;
   overflow: auto;
   -webkit-box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
           box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+}
+
+#leftDiv h3,
+#rightDiv h3 {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
 }
 
 #leftDiv .players,
@@ -101,6 +108,8 @@ body {
   border-radius: 50%;
   -webkit-transition: 1s;
   transition: 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #leftDiv .players .playerInfo,
@@ -145,7 +154,7 @@ body {
 
 #leftDiv .first,
 #rightDiv .first {
-  margin: 20px 0 0 20px;
+  margin: 10px 0 0 20px;
 }
 
 #leftDiv .last,
@@ -156,5 +165,24 @@ body {
 #leftDiv .center,
 #rightDiv .center {
   margin: 0 0 0 20px;
+}
+
+#backgroundLeft {
+  position: absolute;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 300px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#backgroundRight {
+  position: absolute;
+  width: 300px;
+  opacity: 0.3;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
