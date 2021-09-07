@@ -34,6 +34,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
+  height: 100vh;
 }
 
 #asideSection .teamSelectLabel {
@@ -75,16 +77,20 @@ body {
   border-radius: 20px;
   max-width: 500px;
   margin: 10px 0;
+  height: 40px;
   overflow: auto;
   -webkit-box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
           box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+  overflow-y: hidden;
 }
 
 #leftDiv h3,
 #rightDiv h3 {
-  text-align: center;
-  margin-top: 10px;
+  text-align: right;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 50px 10px 0;
 }
 
 #leftDiv .players,
@@ -99,6 +105,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #leftDiv .players .playerImg,
@@ -152,6 +160,11 @@ body {
   opacity: 1;
 }
 
+#leftDiv .players:hover,
+#rightDiv .players:hover {
+  background-color: rgba(128, 128, 128, 0.411);
+}
+
 #leftDiv .first,
 #rightDiv .first {
   margin: 10px 0 0 20px;
@@ -184,5 +197,44 @@ body {
   width: 300px;
   opacity: 0.3;
   z-index: -1;
+}
+
+#compareButton {
+  margin-right: 30px;
+  border: none;
+  padding: 10px 15px;
+  background-color: #0e9c0e;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#compareButton:hover {
+  background-color: #0c850c;
+  -webkit-box-shadow: -4px -4px 12px #62db62, 4px 4px 12px #62db62;
+          box-shadow: -4px -4px 12px #62db62, 4px 4px 12px #62db62;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#xButton {
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#xButton:hover {
+  background-color: #e60000;
+  -webkit-box-shadow: -4px -4px 6px #df4f4f, 4px 4px 6px #df4f4f;
+          box-shadow: -4px -4px 6px #df4f4f, 4px 4px 6px #df4f4f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

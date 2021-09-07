@@ -18,6 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+  height: 100vh;
   .teamSelectLabel {
     // display: block;
     margin: 30px 0 10px 0;
@@ -35,10 +37,8 @@ body {
     width: 150px;
     padding: 10px 0;
     border-radius: 5px;
-    box-shadow:  inset -8px -8px 12px rgb(196, 235, 231),inset 8px 8px 12px rgb(196, 235, 231);
-  }
-  #leftTeam {
-    // margin-bottom: 50px;
+    box-shadow: inset -8px -8px 12px rgb(196, 235, 231),
+      inset 8px 8px 12px rgb(196, 235, 231);
   }
 }
 #leftSection,
@@ -55,21 +55,26 @@ body {
   border-radius: 20px;
   max-width: 500px;
   margin: 10px 0;
+  height: 40px;
   overflow: auto;
   box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
+  overflow-y: hidden;
 }
 #leftDiv,
 #rightDiv {
-  h3{
-    text-align: center;
-    margin-top: 10px;
+  h3 {
+    text-align: right;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 50px 10px 0;
   }
   .players {
     margin: 0 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transition: 1s;
     // border: 1px solid red;
     .playerImg {
       width: 50px;
@@ -106,6 +111,9 @@ body {
     transition: 1s;
     opacity: 1;
   }
+  .players:hover{
+    background-color: rgba(128, 128, 128, 0.411);
+  }
   .first {
     margin: 10px 0 0 20px;
   }
@@ -116,11 +124,7 @@ body {
     margin: 0 0 0 20px;
   }
 }
-#leftDiv{
-}
-#rightDiv{
-}
-#backgroundLeft{
+#backgroundLeft {
   position: absolute;
   justify-self: center;
   align-self: center;
@@ -129,9 +133,39 @@ body {
   z-index: -1;
 }
 
-#backgroundRight{
+#backgroundRight {
   position: absolute;
   width: 300px;
   opacity: 0.3;
   z-index: -1;
+}
+
+#compareButton {
+  margin-right: 30px;
+  border: none;
+  padding: 10px 15px;
+  background-color: rgb(14, 156, 14);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#compareButton:hover {
+  background-color: darken(rgb(14, 156, 14), 5%);
+  box-shadow: -4px -4px 12px rgb(98, 219, 98), 4px 4px 12px rgb(98, 219, 98);
+  transition: 0.3s;
+}
+#xButton {
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#xButton:hover {
+  background-color: darken(red, 5%);
+  box-shadow: -4px -4px 6px rgb(223, 79, 79), 4px 4px 6px rgb(223, 79, 79);
+  transition: 0.3s;
 }

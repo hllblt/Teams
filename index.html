@@ -15,7 +15,7 @@
     <main class="main">
         <section id="leftSection">
             <div id="leftDiv">
-                <img id="backgroundLeft" src="https://upload.wikimedia.org/wikipedia/tr/a/a2/Leicester_City_logo.png"></img>
+                <img id="backgroundLeft" src=""></img>
                 <h3 id="firstTeam">First Team</h3>
                 <div class="players first"><img class="playerImg playerImgLeft" src="https://m.media-amazon.com/images/I/61Jigwd1kKL._AC_SX425_.jpg" alt=""><div class="playerInfo"><p class="playerText playerTextLeft"></p></div></div>
                 <div class="players center"><img class="playerImg playerImgLeft" src="https://m.media-amazon.com/images/I/61Jigwd1kKL._AC_SX425_.jpg" alt=""><div class="playerInfo"><p class="playerText playerTextLeft"></p></div></div>
@@ -32,7 +32,7 @@
         </section>
         <section id="rightSection">
             <div id="rightDiv">
-                <img id="backgroundRight" src="https://upload.wikimedia.org/wikipedia/tr/b/b6/Manchester_United_FC_logo.png"></img>
+                <img id="backgroundRight" src=""></img>
                 <h3 id="secondTeam">Second Team</h3>
                 <div class="players first"><img class="playerImg playerImgRight" src="https://m.media-amazon.com/images/I/61Jigwd1kKL._AC_SX425_.jpg" alt=""><div class="playerInfo"><p class="playerText playerTextRight"></p></div></div>
                 <div class="players center"><img class="playerImg playerImgRight" src="https://m.media-amazon.com/images/I/61Jigwd1kKL._AC_SX425_.jpg" alt=""><div class="playerInfo"><p class="playerText playerTextRight"></p></div></div>
@@ -48,25 +48,24 @@
             </div>
         </section>
         <aside id="asideSection">
-            <div><button id="openButton">Compare</button><button id="closeButton">X</button></div>
+            <div><button id="compareButton">Compare</button><button id="xButton">></button></div>
             <label for="leftTeam" class="teamSelectLabel">Left Team</label>
             <select name="" id="leftTeam" class="teamSelect" onchange="teamSelect(this.value)">
                 <option value="" selected disabled>Choose Team</option>
-                <!-- <option value="">Man.Utd.</option> -->
-                <option value="">Chelsea</option>
-                <option value="">Man.City</option>
-                <option value="">Arsenal</option>
+                <option value="chelsea">Chelsea</option>
+                <option value="mancity">Man.City</option>
+                <option value="arsenal">Arsenal</option>
                 <option value="leicester">Leicester City</option>
+                <option value="manutd">Man.Utd.</option>
             </select>
             <label for="rightTeam" class="teamSelectLabel">Right Team</label>
             <select name="" id="rightTeam" class="teamSelect" onchange="teamSelect(this.value)">
                 <option value="" disabled selected>Choose Team</option>
-                <option value="">Barcelona</option>
-                <option value="">Real Madrid</option>
-                <option value="">Atletico Madrid</option>
-                <option value="">Villarreal</option>
-                <option value="">Real Sociedad</option>
-                <option value="manutd">Man.Utd.</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="realmadrid">Real Madrid</option>
+                <option value="atleticomadrid">Atletico Madrid</option>
+                <option value="villarreal">Villarreal</option>
+                <option value="sevilla">Sevilla</option>
             </select>
         </aside>
     </main>
