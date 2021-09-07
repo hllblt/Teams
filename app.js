@@ -831,7 +831,7 @@ const assignLeftTeam = (team, teamName, teamLogo) => {
     ].innerHTML = `Name: ${team[i].name}<br>Age: ${team[i].age}<br>Position: ${team[i].position}`;
   }
   document.getElementById("firstTeam").innerHTML = teamName;
-  document.getElementById("leftDiv").style.height = "auto";
+  document.getElementById("leftDiv").style.height = "690px";
   document.getElementById("backgroundLeft").src = teamLogo;
 };
 
@@ -843,7 +843,7 @@ const assignRightTeam = (team, teamName, teamLogo) => {
     ].innerHTML = `Name: ${team[i].name}<br>Age: ${team[i].age}<br>Position: ${team[i].position}`;
   }
   document.getElementById("secondTeam").innerHTML = teamName;
-  document.getElementById("rightDiv").style.height = "auto";
+  document.getElementById("rightDiv").style.height = "690px";
   document.getElementById("backgroundRight").src = teamLogo;
 };
 

@@ -82,6 +82,8 @@ body {
   -webkit-box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
           box-shadow: -8px -8px 12px #ffffff, 8px 8px 12px #a3b1c6;
   overflow-y: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #leftDiv h3,
